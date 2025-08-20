@@ -84,3 +84,7 @@ pip install -r requirements.txt
 streamlit run dashboard.py
 ```
 
+##  Future Enhancements  
+-  Real-time Arduino streaming (no CSV).  
+-  Support for **Random Forests / RL schedulers**.  
+-  Multi-line factory coordination.  
