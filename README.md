@@ -51,11 +51,11 @@ This enables the Intelligent scheduler to:
 
 ## Project Structure  
 EdgeSentry/ \
-│── dashboard.py # Streamlit UI dashboard \
-│── final_scheduler.py # Scheduling algorithms + Decision Tree logic \
-│── sensor_log.csv # Sample Arduino sensor logs \
-│── task_profiles.json # Task definitions and priorities
-│── README.md # Project documentation
+│── dashboard.py                  # Streamlit UI dashboard \
+│── final_scheduler.py            # Scheduling algorithms + Decision Tree logic \
+│── sensor_log.csv                # Sample Arduino sensor logs \
+│── task_profiles.json            # Task definitions and priorities \
+│── README.md                
 
 ## Installation & Execution  
 
