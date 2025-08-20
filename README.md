@@ -1,7 +1,8 @@
-# ⚙️ EdgeSentry: Predictive Maintenance Orchestrator  
 
-## 📌 Overview  
-**EdgeSentry** is a smart factory dashboard and load balancer that prevents costly downtime in Industry 4.0 setups.  
+# ⚙ EdgeSentry: Predictive Maintenance Orchestrator  
+
+##  Overview  
+**EdgeSentry** is a smart factory dashboard and load balancer algorithm that prevents costly downtime in Industry 4.0 setups.  
 
 It integrates **real sensor data (Arduino + CSV logs)** with **intelligent scheduling powered by a Decision Tree model** to ensure resilience under stress.  
 
@@ -11,20 +12,20 @@ EdgeSentry solves this by combining **heuristic overload detection** with a **De
 
 ---
 
-## 🚀 Features  
-- 📡 Multi-sensor monitoring (Vibration, Acoustic, Temperature, UV, Camera).  
-- ⚡ Heuristic overload detection: Estimates CPU load per sensor before running.  
-- 🧠 Three Schedulers:  
+##  Features  
+- Multi-sensor monitoring (Vibration, Acoustic, Temperature, UV, Camera).  
+- Heuristic overload detection: Estimates CPU load per sensor before running.  
+- Three Schedulers:  
   - **Round Robin**  
   - **Strict Priority**  
   - **Intelligent (Decision Tree)**  
-- 📊 Comparative performance dashboard: Stress-test schedulers on the same workload.  
-- 📝 Real-time decision log: See how tasks are prioritized or dropped.  
-- 🏭 Factory configs: Choose **prebuilt setups (Factory Floor A/B)** or create custom ones.  
+- Comparative performance dashboard: Stress-test schedulers on the same workload.  
+- Real-time decision log: See how tasks are prioritized or dropped.  
+- Factory configs: Choose **prebuilt setups (Factory Floor A/B)** or create custom ones.  
 
 ---
 
-## 🧠 Decision Tree: Intuition  
+## Decision Tree: Intuition  
 Scheduler decisions resemble **if-else rules**:  
 
 - If CPU < 70% **and** task is high priority → ✅ run  
@@ -34,13 +35,13 @@ A **Decision Tree classifier** naturally models this behavior.
 Instead of hardcoding thresholds, the tree **learns from simulated task queues**.  
 
 This enables the Intelligent scheduler to:  
-✅ Avoid catastrophic failures  
-✅ Shed only non-critical tasks  
-✅ Maximize uptime of essential sensors  
+- Avoid catastrophic failures
+- Shed only non-critical tasks
+- Maximize uptime of essential sensors  
 
 ---
 
-## 🔧 Data Pipeline  
+## Data Pipeline  
 - **Sensors used**: Vibration, Acoustic, Temperature, Humidity, UV, Camera (RGB).  
 - Captured using **Arduino UNO** and exported to **CSV logs** (`sensor_log.csv`).  
 - Dashboard dynamically streams from this file, simulating real-time updates.  
@@ -48,4 +49,17 @@ This enables the Intelligent scheduler to:
 
 ---
 
-## 📂 Project Structure  
+## Project Structure  
+EdgeSentry/
+│── dashboard.py # Streamlit UI dashboard
+│── final_scheduler.py # Scheduling algorithms + Decision Tree logic
+│── sensor_log.csv # Sample Arduino sensor logs
+│── task_profiles.json # Task definitions and priorities
+│── README.md # Project documentation
+
+## Installation & Execution  
+
+### 1️. Clone Repository  
+git clone https://github.com/
+<your-username>/EdgeSentry.git
+cd EdgeSentry
