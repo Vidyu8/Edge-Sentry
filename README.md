@@ -60,6 +60,22 @@ EdgeSentry/
 ## Installation & Execution  
 
 ### 1️. Clone Repository  
-git clone https://github.com/
-<your-username>/EdgeSentry.git
+```bash
+git clone https://github.com/<your-username>/EdgeSentry.git
 cd EdgeSentry
+```
+### 2️. Setup Virtual Environment (Optional but Recommended)  
+```bash
+python -m venv venv
+source venv/bin/activate # Linux/Mac
+venv\Scripts\activate # Windows
+```
+### 3️. Install Dependencies  
+```bash
+pip install -r requirements.txt
+```
+### 4️. Run Dashboard  
+```bash
+streamlit run dashboard.py
+```
+
