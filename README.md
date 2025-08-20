@@ -1,5 +1,10 @@
 
-# ⚙ EdgeSentry: Predictive Maintenance Orchestrator  
+#  EdgeSentry: Predictive Maintenance Orchestrator  
+
+<img width="1916" height="889" alt="image" src="https://github.com/user-attachments/assets/b1015cc7-5031-4a27-aaa6-e0243366ab3b" />
+<img width="1909" height="873" alt="image" src="https://github.com/user-attachments/assets/0dd60c21-44e1-498d-8a20-09d4493374b0" />
+<img width="1906" height="889" alt="image" src="https://github.com/user-attachments/assets/709ef791-b941-4c45-868d-397ff54ec728" />
+
 
 ##  Overview  
 **EdgeSentry** is a smart factory dashboard and load balancer algorithm that prevents costly downtime in Industry 4.0 setups.  
